@@ -29,6 +29,12 @@ import esLocalCurrency from 'cldr-numbers-full/main/es/currencies.json';
 import esCaGregorian from 'cldr-dates-full/main/es/ca-gregorian.json';
 import esDateFields from'cldr-dates-full/main/es/dateFields.json';
 
+import ptNumbers from 'cldr-numbers-full/main/pt-br/numbers.json';
+import ptLocalCurrency from 'cldr-numbers-full/main/pt-br/currencies.json';
+import ptCaGregorian from 'cldr-dates-full/main/pt-br/ca-gregorian.json';
+import ptDateFields from'cldr-dates-full/main/pt-br/dateFields.json';
+
+import { ptMessages } from './messages/pt';
 import { enMessages } from './messages/en-US';
 import { frMessages } from './messages/fr';
 import { esMessages } from './messages/es';
@@ -52,23 +58,30 @@ load(
     esNumbers,
     esLocalCurrency,
     esCaGregorian,
-    esDateFields
+    esDateFields,
+    ptNumbers,
+    ptLocalCurrency,
+    ptCaGregorian,
+    ptDateFields
+
 );
+
 
 loadMessages(esMessages, 'es');
 loadMessages(frMessages, 'fr');
 loadMessages(enMessages, 'en-US');
+loadMessages(ptMessages, 'pt-BR');
 
 const App = () => {
     const [contextState, setContextState] = React.useState({
-        localeId: 'en-US',
-        firstName: 'Peter',
-        lastName: 'Douglas',
+        localeId: 'pt-BR',
+        firstName: 'Jefferson',
+        lastName: 'Motta',
         middleName: '',
-        email: 'peter.douglas@progress.com',
-        phoneNumber: '(+1) 8373-837-93-02',
+        email: 'motta@menphis.com.br',
+        phoneNumber: '+55 (51) 99237.3005',
         avatar: null,
-        country: countries[33].name,
+        country: countries[31].name,
         isInPublicDirectory: true,
         biography: '',
         teamId: 1

@@ -1,14 +1,18 @@
-export const locales = [
+export const locales = [    
     {
-        locale: 'English',
+        locale: 'Inglês',
         localeId: 'en-US'
-    },
+    },    
     {
-        locale: 'French',
+        locale: 'Francês',
         localeId: 'fr'
     },
     {
-        locale: 'Spanish',
+        locale: 'Espanhol',
         localeId: 'es'
+    },
+    {
+        locale: 'Portugês',
+        localeId: 'pt-BR'
     }
 ];
