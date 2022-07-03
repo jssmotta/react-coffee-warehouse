@@ -29,12 +29,12 @@ import esLocalCurrency from 'cldr-numbers-full/main/es/currencies.json';
 import esCaGregorian from 'cldr-dates-full/main/es/ca-gregorian.json';
 import esDateFields from'cldr-dates-full/main/es/dateFields.json';
 
-import ptNumbers from 'cldr-numbers-full/main/pt-br/numbers.json';
-import ptLocalCurrency from 'cldr-numbers-full/main/pt-br/currencies.json';
-import ptCaGregorian from 'cldr-dates-full/main/pt-br/ca-gregorian.json';
-import ptDateFields from'cldr-dates-full/main/pt-br/dateFields.json';
+import ptNumbers from 'cldr-numbers-full/main/br/numbers.json';
+import ptLocalCurrency from 'cldr-numbers-full/main/br/currencies.json';
+import ptCaGregorian from 'cldr-dates-full/main/br/ca-gregorian.json';
+import ptDateFields from'cldr-dates-full/main/br/dateFields.json';
 
-import { ptMessages } from './messages/pt';
+import { ptMessages } from './messages/br';
 import { enMessages } from './messages/en-US';
 import { frMessages } from './messages/fr';
 import { esMessages } from './messages/es';
@@ -70,11 +70,11 @@ load(
 loadMessages(esMessages, 'es');
 loadMessages(frMessages, 'fr');
 loadMessages(enMessages, 'en-US');
-loadMessages(ptMessages, 'pt-BR');
+loadMessages(ptMessages, 'br');
 
 const App = () => {
     const [contextState, setContextState] = React.useState({
-        localeId: 'pt-BR',
+        localeId: 'br',
         firstName: 'Jefferson',
         lastName: 'Motta',
         middleName: '',

@@ -12,7 +12,7 @@ export const locales = [
         localeId: 'es'
     },
     {
-        locale: 'Portugês',
-        localeId: 'pt-BR'
+        locale: 'Português',
+        localeId: 'br'
     }
 ];
