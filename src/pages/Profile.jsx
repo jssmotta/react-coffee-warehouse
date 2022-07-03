@@ -100,9 +100,23 @@ const Profile = () => {
                                         id={'phoneNumber'}
                                         name={'phoneNumber'}
                                         label={localizationService.toLanguageString('custom.phoneNumber')}
-                                        mask={'(+9) 0000-000-00-00'}
+                                        mask={'(99) 00000-0000'}
                                         validator={phoneValidator}
                                         component={MaskedTextBox}
+                                    />                                     
+                                    <Field
+                                        id='documento'
+                                        name='documento'
+                                        label='Documento (CPF/CNPJ)'                                         
+                                        mask={'000.000.000-00'} 
+                                        component={MaskedTextBox}                                      
+                                    />
+                                      <Field
+                                        id='zipcode'
+                                        name='zipcode'
+                                        label='CEP'                                         
+                                        mask={'00.000-000'} 
+                                        component={MaskedTextBox}                                      
                                     />
                                     <Field
                                         id={'country'}
@@ -132,7 +146,8 @@ const Profile = () => {
                                         component={RadioGroup}
                                         data={teamsData}
                                     />
-                                    <hr />
+                                   
+                                                                        <hr />
                                     <div className={'k-form-buttons'}>
                                         <Button
                                             onClick={onCancelClick}

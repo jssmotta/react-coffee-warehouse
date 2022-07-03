@@ -81,7 +81,7 @@ const App = () => {
         email: 'motta@menphis.com.br',
         phoneNumber: '+55 (51) 99237.3005',
         avatar: null,
-        country: countries[31].name,
+        country: countries[30].name,
         isInPublicDirectory: true,
         biography: '',
         teamId: 1
@@ -120,3 +120,5 @@ const App = () => {
 }
 
 export default App;
+
+
